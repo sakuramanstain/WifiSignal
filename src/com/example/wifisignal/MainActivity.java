@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
 	}
 	Handler handler = new Handler();
     //要用handler来处理多线程可以使用runnable接口，这里先定义该接口
-    //线程中运行该接口的run函数
+    //线程中运行该接口的run函
     Runnable update_thread = new Runnable()
     {
         public void run()
@@ -132,7 +132,7 @@ public class MainActivity extends Activity {
         }catch(Exception e){
   			   
   		   }
-        	if(i<300){
+        	if(i<300*40){
         	 handler.postDelayed(update_thread,200); 
         	}else{
         	 handler.removeCallbacks(update_thread);
